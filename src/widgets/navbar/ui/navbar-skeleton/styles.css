@@ -1,0 +1,6 @@
+.navbar-skeleton {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 12px;
+}

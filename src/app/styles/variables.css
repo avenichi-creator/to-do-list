@@ -1,0 +1,13 @@
+:root {
+	/* background */
+	--main-bg: #4685ff;
+	--secondary-bg: #ffffff;
+
+	/* link */
+	--link-bg: #ffffff;
+	--link-hover-bg: #dddddd;
+
+	/* skeleton */
+	--skeleton-bg: #dddddd;
+	--skeleton-shine: #e8e8e8;
+}
