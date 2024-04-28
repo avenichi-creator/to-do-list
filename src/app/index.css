@@ -1,0 +1,9 @@
+@import './styles/reset.css';
+@import './styles/variables.css';
+
+body {
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--main-bg);
+}
