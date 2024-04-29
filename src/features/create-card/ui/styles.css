@@ -1,0 +1,42 @@
+.create-card {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 8px;
+
+	@media (width > 425px) {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 12px;
+	}
+}
+
+.create-card .input {
+	grid-column: 1 / -1;
+	grid-row: 1 / 1;
+
+	@media (width > 425px) {
+		flex-grow: 1;
+	}
+}
+
+.create-card .select {
+	height: 28px;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--input-bg);
+	transition: all 0.2s linear;
+
+	&:hover,
+	&:focus {
+		background-color: var(--input-focus-bg);
+	}
+}
+
+.create-card .button,
+.create-card .input,
+.create-card .select {
+	border: 1px solid #000000;
+}

@@ -1,25 +1,25 @@
-import React, { useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from 'shared/store';
-import { thunkGetCategories } from 'shared/store/categories/thunks';
+import clsx from 'clsx';
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { useAppSelector } from 'shared/store';
 import { Link } from 'shared/ui/link';
-import { NavbarSkeleton } from './navbar-skeleton';
 import './styles.css';
 
 export function Navbar() {
-	const { isLoading, categories } = useAppSelector((state) => state.categoriesReducer);
-	const dispatch = useAppDispatch();
+	const { categoryId } = useParams();
 
-	useEffect(() => {
-		dispatch(thunkGetCategories());
-	}, []);
-
-	if (isLoading) return <NavbarSkeleton />;
+	const { categories } = useAppSelector((state) => state.dataReducer);
 
 	return (
 		<nav className="navbar">
-			<Link to="/" text="All" />
+			<Link className={clsx({ active: categoryId === undefined })} to="/" text="All" />
 			{categories.map((item) => (
-				<Link key={item.id} to={`category/${item.id}`} text={item.title} />
+				<Link
+					className={clsx({ active: categoryId !== undefined && +categoryId === item.id })}
+					key={item.id}
+					to={`category/${item.id}`}
+					text={item.title}
+				/>
 			))}
 		</nav>
 	);

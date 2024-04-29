@@ -7,7 +7,14 @@
 	--link-bg: #ffffff;
 	--link-hover-bg: #dddddd;
 
-	/* skeleton */
-	--skeleton-bg: #dddddd;
-	--skeleton-shine: #e8e8e8;
+	/* button */
+	--button-bg: var(--link-bg);
+	--button-hover-bg: var(--link-hover-bg);
+
+	/* input */
+	--input-bg: var(--link-bg);
+	--input-focus-bg: var(--link-hover-bg);
+
+	/* card */
+	--card-bg: #4685ffee;
 }

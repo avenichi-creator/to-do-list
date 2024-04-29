@@ -1,0 +1,19 @@
+.button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0 10px;
+	height: 28px;
+	min-width: 75px;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--button-bg);
+	cursor: pointer;
+	transition: all 0.2s linear;
+
+	&:hover {
+		background-color: var(--button-hover-bg);
+	}
+}
