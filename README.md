@@ -4,10 +4,10 @@ My take on todo lists out there, nothing too complicated.
 
 ## Feature List
 
-- [ ] Change tabs;
-- [ ] Add a new todo card;
-- [ ] Edit an exsisting todo card;
-- [ ] Remove an existing todo card;
+- [x] Change tabs;
+- [x] Add a new todo card;
+- [x] Edit an exsisting todo card;
+- [x] Remove an existing todo card;
 
 ## Tech Stack
 
