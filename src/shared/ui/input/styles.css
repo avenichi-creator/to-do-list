@@ -1,0 +1,14 @@
+.input {
+	padding: 0 10px;
+	height: 28px;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--input-bg);
+	transition: all 0.2s linear;
+
+	&:hover,
+	&:focus {
+		background-color: var(--input-focus-bg);
+	}
+}

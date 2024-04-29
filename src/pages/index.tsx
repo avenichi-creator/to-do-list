@@ -1,6 +1,5 @@
 import React from 'react';
 import { createBrowserRouter, Outlet } from 'react-router-dom';
-import { navbarLoader } from 'shared/utils/loaders';
 import { Navbar } from 'widgets/navbar';
 import { CategoryPage } from './category-page';
 import { PageNotFound } from './page-not-found';
@@ -21,7 +20,6 @@ export const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Layout />,
-		loader: navbarLoader,
 		children: [
 			{
 				path: '',

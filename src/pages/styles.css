@@ -4,9 +4,14 @@
 	gap: 18px;
 	margin: 0 auto;
 	padding: 60px 0;
-	width: 400px;
+	width: 290px;
+
+	@media (width > 425px) {
+		width: 500px;
+	}
 }
 
 .layout-content {
+	border-radius: 10px;
 	background-color: var(--secondary-bg);
 }
