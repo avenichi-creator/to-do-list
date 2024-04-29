@@ -21,3 +21,4 @@ My take on todo lists out there, nothing too complicated.
 - ESLint
 - Prettier
 - Compose Function
+- clsx
